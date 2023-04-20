@@ -6,16 +6,17 @@ function DogPics() {
   const [images, setImages] = useState([]);
 
   useEffect(() => {
-    console.log("useEffect");
-    fetch("https://dog.ceo/api/breeds/image/random/3")
-      .then((r) => r.json())
-      .then((data) => {
-        console.log("setState");
-        setImages(data.message);
-      });
-  });
+    // console.log("useEffect");
+    // fetch("https://dog.ceo/api/breeds/image/random/3")
+    //   .then((r) => r.json())
+    //   .then((data) => {
+    //     //console.log("setState");
+    //     setImages(data.message);
+    //   });
+    document.title = text;
+  }, [text]);
 
-  console.log("render");
+  //console.log("render");
 
   return (
     <div>
